@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/main.css" rel="stylesheet">
+    <title>Documentation</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="/">Apache Groovy</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <hr data-toggle="collapse">
+            <!--            <ul class="navbar-nav mr-auto"></ul>-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/learn.html">Learn</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/documentation.html">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/download.html">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/support.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contribute.html">Contribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ecosystem.html">Ecosystem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer" onclick="e => e.preventDefault()">Socialize</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/apache/groovy"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/search.html"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 mt-5">
+            <div class="nav-sidebar sticky-top">
+                <h5 class="nav-sidebar-header">Documentation</h5>
+                <ul>
+                    <li><a href="#gettingstarted" class="anchor-link">Getting started</a></li>
+                    <li><a href="#languagespecification" class="anchor-link">Language Specification</a></li>
+                    <li><a href="#tools" class="anchor-link">Tools</a></li>
+                    <li><a href="#groovymoduleguides" class="anchor-link">Groovy module guides</a></li>
+                    <li><a href="#apidocumentation" class="anchor-link">API documentation</a></li>
+                    <li><a href="#all-versions" class="anchor-link">Documentation for other versions</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+
+            <div class="page-header my-5">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="font-weight-bold">Documentation</h1>
+                    </div>
+                    <div class="col-6 text-right">
+                        <div id="contribute-btn">
+                            <button type="button" class="btn btn-outline-dark shadow-sm btn-sm"
+                                    onclick="window.location.href=&quot;https://github.com/apache/groovy-website/tree/asf-site/site/src/site/pages/documentation.groovy&quot;">
+                                <i class="fa fa-pencil-square-o"></i> Improve this doc
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <p>The documentation is available as a <a href="single-page-documentation.html">single-page document</a>,
+                    or feel free to pick at a direct section below.</p>
+                <p>You can also browse <a href="#all-versions">documentation for other versions</a>.</p>
+
+            </div>
+
+            <section id="gettingstarted">
+                <div class="section-header">
+                    <div class="d-flex align-items-center">
+                        <div class="pr-2">
+                            <i class="em em-star"></i>
+                        </div>
+                        <div>
+                            <span class="h4">Getting started</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section-content">
+                    <ul>
+                        <li><a href="download.html">Download Groovy</a></li>
+                        <li><a href="install.html">Install Groovy</a></li>
+                        <li><a href="differences.html">Differences with Java</a></li>
+                        <li><a href="groovy-dev-kit.html">The Groovy Development Kit</a></li>
+                        <li><a href="metaprogramming.html">Runtime and compile-time metaprogramming</a></li>
+                        <li><a href="grape.html">The Grape dependency manager</a></li>
+                        <li><a href="testing.html">Testing guide</a></li>
+                        <li><a href="dsls.html">Domain-Specific Languages</a></li>
+                        <li><a href="integrating.html">Integrating Groovy into applications</a></li>
+                        <li><a href="security.html">Security</a></li>
+                        <li><a href="design-patterns.html">Design patterns in Groovy</a></li>
+                        <li><a href="style-guide.html">Style guide</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="languagespecification">
+                <div class="section-header">
+                    <div class="d-flex align-items-center">
+                        <div class="pr-2">
+                            <i class="em em-capital_abcd"></i>
+                        </div>
+                        <div>
+                            <span class="h4">Language Specification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section-content">
+                    <ul>
+                        <li><a href="syntax.html">Syntax</a></li>
+                        <li><a href="operators.html">Operators</a></li>
+                        <li><a href="structure.html">Program structure</a></li>
+                        <li><a href="objectorientation.html">Object orientation</a></li>
+                        <li><a href="closures.html">Closures</a></li>
+                        <li><a href="semantics.html">Semantics</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="tools">
+                <div class="section-header">
+                    <div class="d-flex align-items-center">
+                        <div class="pr-2">
+                            <i class="em em-gear"></i>
+                        </div>
+                        <div>
+                            <span class="h4">Tools</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section-content">
+                    <ul>
+                        <li><a href="groovyc.html">groovyc - the Groovy compiler</a></li>
+                        <li><a href="groovysh.html">groovysh - the Groovy repl-like shell</a></li>
+                        <li><a href="groovyconsole.html">groovyConsole - the Groovy Swing console</a></li>
+                        <li><a href="ides.html">IDE integration</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="groovymoduleguides">
+                <div class="section-header">
+                    <div class="d-flex align-items-center">
+                        <div class="pr-2">
+                            <i class="em em-card_file_box"></i>
+                        </div>
+                        <div>
+                            <span class="h4">Groovy module guides</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section-content">
+                    <ul>
+                        <li><a href="json.html">Parsing and producing JSON</a></li>
+                        <li><a href="databases.html">Working with a relational database</a></li>
+                        <li><a href="processing-xml.html">Processing XML</a></li>
+                        <li><a href="scripting-ant.html">Scripting Ant tasks</a></li>
+                        <li><a href="templating.html">Template engines</a></li>
+                        <li><a href="swing.html">Creating Swing UIs</a></li>
+                        <li><a href="servlet.html">Servlet support</a></li>
+                        <li><a href="jmx.html">Working with JMX</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="apidocumentation">
+                <div class="section-header">
+                    <div class="d-flex align-items-center">
+                        <div class="pr-2">
+                            <i class="fa fa-code h4"></i>
+                        </div>
+                        <div>
+                            <span class="h4">API documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section-content">
+                    <ul>
+                        <li><a href="api.html">GroovyDoc documentation of the Groovy APIs</a></li>
+                        <li><a href="gdk.html">The Groovy Development Kit enhancements</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="col-md-12">
+                <hr class="divider">
+                <a name="all-versions"></a>
+                <h3>Documentation for all Groovy versions</h3>
+                <p>You can browse the documentation of a particular version of Groovy (since Groovy 1.7):</p>
+                <select
+                        class="form-control"
+                        onchange="window.location.href='http://docs.groovy-lang.org/docs/groovy-' + this.value + '/html/'">
+                    <option>Select a version</option>
+                    <option>3.0.0-beta-3</option>
+                    <option>3.0.0-beta-2</option>
+                    <option>3.0.0-beta-1</option>
+                    <option>3.0.0-alpha-4</option>
+                    <option>3.0.0-alpha-3</option>
+                    <option>3.0.0-alpha-2</option>
+                    <option>3.0.0-alpha-1</option>
+                    <option>2.6.0-alpha-4</option>
+                    <option>2.6.0-alpha-3</option>
+                    <option>2.6.0-alpha-2</option>
+                    <option>2.6.0-alpha-1</option>
+                    <option>2.5.8</option>
+                    <option>2.5.7</option>
+                    <option>2.5.6</option>
+                    <option>2.5.5</option>
+                    <option>2.5.4</option>
+                    <option>2.5.3</option>
+                    <option>2.5.2</option>
+                    <option>2.5.1</option>
+                    <option>2.5.0</option>
+                    <option>2.5.0-rc-3</option>
+                    <option>2.5.0-rc-2</option>
+                    <option>2.5.0-rc-1</option>
+                    <option>2.4.17</option>
+                    <option>2.4.16</option>
+                    <option>2.4.15</option>
+                    <option>2.4.14</option>
+                    <option>2.4.13</option>
+                    <option>2.4.12</option>
+                    <option>2.4.11</option>
+                    <option>2.4.10</option>
+                    <option>2.4.9</option>
+                    <option>2.4.8</option>
+                    <option>2.4.7</option>
+                    <option>2.4.6</option>
+                    <option>2.4.5</option>
+                    <option>2.4.4</option>
+                    <option>2.4.3</option>
+                    <option>2.4.2</option>
+                    <option>2.4.1</option>
+                    <option>2.4.0</option>
+                    <option>2.3.11</option>
+                    <option>2.3.10</option>
+                    <option>2.3.9</option>
+                    <option>2.3.8</option>
+                    <option>2.3.7</option>
+                    <option>2.3.6</option>
+                    <option>2.3.5</option>
+                    <option>2.3.4</option>
+                    <option>2.3.3</option>
+                    <option>2.3.2</option>
+                    <option>2.3.1</option>
+                    <option>2.3.0</option>
+                    <option>2.2.2</option>
+                    <option>2.2.1</option>
+                    <option>2.2.0</option>
+                    <option>2.1.9</option>
+                    <option>2.1.8</option>
+                    <option>2.1.7</option>
+                    <option>2.1.6</option>
+                    <option>2.1.5</option>
+                    <option>2.1.4</option>
+                    <option>2.1.3</option>
+                    <option>2.1.2</option>
+                    <option>2.1.1</option>
+                    <option>2.1.0</option>
+                    <option>2.0.8</option>
+                    <option>2.0.7</option>
+                    <option>2.0.6</option>
+                    <option>2.0.5</option>
+                    <option>2.0.4</option>
+                    <option>2.0.3</option>
+                    <option>2.0.2</option>
+                    <option>2.0.1</option>
+                    <option>2.0.0</option>
+                    <option>1.8.9</option>
+                    <option>1.8.8</option>
+                    <option>1.8.7</option>
+                    <option>1.8.6</option>
+                    <option>1.8.5</option>
+                    <option>1.8.4</option>
+                    <option>1.8.3</option>
+                    <option>1.8.2</option>
+                    <option>1.8.1</option>
+                    <option>1.8.0</option>
+                    <option>1.7.11</option>
+                    <option>1.7.10</option>
+                    <option>1.7.9</option>
+                    <option>1.7.8</option>
+                    <option>1.7.7</option>
+                    <option>1.7.6</option>
+                    <option>1.7.5</option>
+                    <option>1.7.4</option>
+                    <option>1.7.3</option>
+                    <option>1.7.2</option>
+                    <option>1.7.1</option>
+                    <option>1.7.0</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row text-left">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h5 class="font-weight-bold">Groovy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="">Learn</a></li>
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Download</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Contribute</a></li>
+                    <li><a href="">Ecosystem</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h5 class="font-weight-bold">About</h5>
+                <ul class="list-unstyled">
+                    <li><a href="">Source code</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Thanks</a></li>
+                    <li><a href="">Sponsorship</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Search</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h5 class="font-weight-bold">Socialize</h5>
+                <ul class="list-unstyled">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Get Started</a></li>
+                    <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by">Imprint</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                The Groovy programming language is supported by the <a href="http://www.apache.org/"
+                                                                       class="text-orange text-underline">Apache
+                Software
+                Foundation</a> and the Groovy community
+                <img style="max-width: 100%" src="http://groovy-lang.org/img/xasf_logo.png.pagespeed.ic.oYGxdP6oSc.png"
+                     alt="The Apache Software Foundation">
+            </div>
+        </div>
+
+        <div class="text-center py-4">
+            <p class="h6 text-muted">
+                © 2003-2019 the Apache Groovy project — Groovy is Open Source, <a
+                    href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 License</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="/bundle.js"></script>
+</body>
+</html>
